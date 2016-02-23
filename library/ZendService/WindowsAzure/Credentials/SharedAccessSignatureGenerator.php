@@ -38,6 +38,14 @@ class SharedAccessSignatureGenerator
         return implode("\n", $elements);
     }
 
+    /**
+     * @param $method
+     * @param $uri
+     * @param $user
+     * @param $key
+     * @param $expiryTime
+     * @return Request
+     */
     public function generateRequestObject($method, $uri, $user, $key, $expiryTime)
     {
         $stringToSign = $this->generateStringToSign($uri, $expiryTime);
