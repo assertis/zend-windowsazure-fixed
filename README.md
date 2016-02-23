@@ -33,6 +33,7 @@ $queue = new \ZendService\WindowsAzure\Storage\Queue(
 );
 
 $response = $queue->popMessage("queue/sample/name");
+echo $response->getBody();
 ```
 
 
