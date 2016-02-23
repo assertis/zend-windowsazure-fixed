@@ -21,4 +21,18 @@ and
 }
 ```
 
+#Usage examples
+
+## Pop message from queue
+
+```
+$queue = new \ZendService\WindowsAzure\Storage\Queue(
+    "sample-host.servicebus.windows.net",
+    "SAS_user_name",
+    "SAS_user_key"
+);
+
+$response = $queue->popMessage("queue/sample/name");
+```
+
 
