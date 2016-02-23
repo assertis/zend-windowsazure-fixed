@@ -1,14 +1,12 @@
 {
-    "name": "zendframework/zendservice-windowsazure",
-    "description": "OOP wrapper for the WindowsAzure web service",
+    "name": "assertis/zend-windowsazure-fixed",
+    "description": "pseudo-fork of zensservice-windowsazure repository. It contain fixes for current version of azure cloud and additional functionality for Asserts goals",
     "type": "library",
     "keywords": [
         "zf2",
         "windows",
         "azure"
     ],
-    "homepage": "http://packages.zendframework.com/",
-    "license": "BSD-3-Clause",
     "autoload": {
         "psr-0": {
             "ZendService\\WindowsAzure\\": "library/"
